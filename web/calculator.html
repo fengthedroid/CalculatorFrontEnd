@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
@@ -193,7 +194,7 @@
                     <p>EBIT</p></div>
             </td>
             <td>
-                <div><input size="14" maxlength="17" readonly>
+                <div><input size="14" maxlength="17" readonly ng-model="variable1.range">
                     <img src="resources/plus.png">
                     <br>
 
@@ -206,19 +207,42 @@
     </table>
 </div>
 <div id="variables" class="col-md-5 col-md-offset-2">
-    fawe
-    <div id="slider1"></div>
-    few
+    <div class="col-md-4">
+        <br>
+        <p> Variable 1</p>
+        <br>
+        <div id="slider1"></div>
+    </div>
+    <div class="col-md-4"><br>
+        <p> Variable 1</p>
+        <br>
+        <div id="slider2"></div>
+    </div>
+    <div class="col-md-4"><br>
+        <p> Variable 1</p>
+        <br>
+        <div id="slider3"></div>
+    </div>
+    <div class="col-md-4"><br>
+        <p> Variable 1</p>
+        <br>
+        <div id="slider4"></div>
+    </div>
+    <div class="col-md-4"><br>
+        <p> Variable 1</p>
+        <br>
+        <div id="slider5"></div>
+    </div>
+    <div class="col-md-4"><br>
+        <p> Variable 1</p>
+        <br>
+        <div id="slider6"></div>
+    </div>
+
 </div>
-<script>
-    $(function () {
-        $("#slider1").slider();
-    });
-</script>
 <div id="hints" col-md-3>
     hints
 </div>
-
 
 
 </body>
