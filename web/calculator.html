@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html ng-app="CalculatorModule">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <!-- Latest compiled and minified CSS -->
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <script src="calculator.js"></script>
+
+    <style>
+        #mainTable tr {
+            height: 100px;
+            vertical-align: top;
+        }
+
+        body {
+            background-color: dimgrey;
+        }
+
+        p {
+            font-size: 16px;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body ng-controller="CalcControl">
+
+<div id="mainArea" class="col-md-10  col-md-offset-2">
+    <table id="mainTable">
+        <tr>
+            <td>&nbsp;</td>
+            <td width="200"></td>
+            <td>&nbsp;</td>
+            <td width="160"></td>
+            <td width="55">&nbsp;</td>
+            <td width="160"></td>
+            <td width="55">&nbsp;</td>
+            <td width="160"></td>
+            <td width="55">&nbsp;</td>
+            <td width="160">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <div>
+                    <input value="100000" size="14"
+                           maxlength="17" autocomplete="off">
+                    <br>
+
+                    <p>Limit</p>
+                </div>
+            </td>
+            <td rowspan="4"></td>
+            <td>
+                <div><input size="14" maxlength="17" readonly>
+                    <img src="resources/plus.png">
+                    <br>
+
+                    <p>Net Interest Income</p></div>
+            </td>
+            <td rowspan="4"><img src="resources/Arrow02.png" height="330px"/></td>
+            <td>
+                <div><input size="14" maxlength="17" readonly><img
+                        src="resources/plus.png">
+                    <br>
+
+                    <p>EBIT</p></div>
+            </td>
+            <td rowspan="4"></td>
+            <td>
+                <div><input size="14" maxlength="17" readonly>
+                    <img src="resources/plus.png">
+                    <br>
+
+                    <p>NPAT</p></div>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <div>
+                    <input value="100000" size="14"
+                           maxlength="17" autocomplete="off">
+                    <br>
+
+                    <p>Limit</p>
+                </div>
+            </td>
+            <td>
+                <div><input size="14" maxlength="17" readonly>
+                    <img src="resources/plus.png">
+                    <br>
+
+                    <p>Net Interest Income</p></div>
+            </td>
+            <td>
+                <div><input size="14" maxlength="17" readonly><img
+                        src="resources/plus.png">
+                    <br>
+
+                    <p>EBIT</p></div>
+            </td>
+            <td>
+                <div><input size="14" maxlength="17" readonly>
+                    <img src="resources/plus.png">
+                    <br>
+
+                    <p>NPAT</p></div>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <div>
+                    <input value="100000" size="14"
+                           maxlength="17" autocomplete="off">
+                    <br>
+
+                    <p>Limit</p>
+                </div>
+            </td>
+            <td>
+                <div><input size="14" maxlength="17" readonly>
+                    <img src="resources/plus.png">
+                    <br>
+
+                    <p>Net Interest Income</p></div>
+            </td>
+            <td>
+                <div><input size="14" maxlength="17" readonly><img
+                        src="resources/plus.png">
+                    <br>
+
+                    <p>EBIT</p></div>
+            </td>
+            <td>
+
+            </td>
+            <td>&nbsp;</td>
+            <td>
+                <div><input size="14" maxlength="17" readonly>
+                    <img src="resources/plus.png">
+                    <br>
+
+                    <p>Total</p></div>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <div>
+                    <input value="100000" size="14"
+                           maxlength="17" autocomplete="off">
+                    <br>
+
+                    <p>Limit</p>
+                </div>
+            </td>
+            <td>
+                <div><input size="14" maxlength="17" readonly>
+                    <img src="resources/plus.png">
+                    <br>
+
+                    <p>Net Interest Income</p></div>
+            </td>
+            <td>
+                <div><input size="14" maxlength="17" readonly><img
+                        src="resources/plus.png">
+                    <br>
+
+                    <p>EBIT</p></div>
+            </td>
+            <td>
+                <div><input size="14" maxlength="17" readonly>
+                    <img src="resources/plus.png">
+                    <br>
+
+                    <p>NPAT</p></div>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<div id="variables" class="col-md-5 col-md-offset-2">
+    fawe
+    <div id="slider1"></div>
+    few
+</div>
+<script>
+    $(function () {
+        $("#slider1").slider();
+    });
+</script>
+<div id="hints" col-md-3>
+    hints
+</div>
+
+
+
+</body>
+</html>
